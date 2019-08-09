@@ -26,7 +26,7 @@ object Question7 {
   import scala.util.{Try, Success, Failure}
 
   def reverse(x: Int): Int = {
-    val str = x.toString().toList
+    val str = x.toString.toList
     val (maybeMinus, numberPart) = str.head match {
       case '-' => ("-", str.tail)
       case _ => ("", str)
